@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>developers.opensin.ai</title>
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta
+      name="description"
+      content="OpenSIN developer portal for APIs, SDKs, auth, webhooks, and integrations."
+    />
+    <link rel="canonical" href="https://developers.opensin.ai/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="OpenSIN developers home">
+          <span class="brand-mark"></span>
+          <span>OpenSIN Developers</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/docs/">Docs</a>
+          <a href="https://docs.opensin.ai/">Consumer Docs</a>
+          <a href="https://my.opensin.ai/">MyOpenSIN</a>
+          <a href="https://github.com/OpenSIN-AI">GitHub</a>
+        </nav>
+      </header>
+
+      <main class="hero-grid">
+        <section class="hero copy">
+          <p class="eyebrow">Cloudflare-hosted developer portal</p>
+          <h1>Build on OpenSIN.</h1>
+          <p class="lead">
+            APIs, SDKs, auth flows, webhooks, and deployment guidance for teams
+            integrating with the platform.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="/docs/">Open docs</a>
+            <a class="button secondary" href="https://docs.opensin.ai/">
+              Consumer docs
+            </a>
+          </div>
+
+          <div class="signal-row" aria-label="Key surfaces">
+            <span class="signal-chip">Cloudflare Pages</span>
+            <span class="signal-chip">docs.opensin.ai</span>
+            <span class="signal-chip">my.opensin.ai</span>
+          </div>
+
+          <div class="code-panel">
+            <div class="code-panel-header">
+              <span>Deploy on Cloudflare Pages</span>
+            </div>
+            <pre><code>bun ./scripts/build.mjs
+wrangler pages deploy dist \
+  --project-name website-developers-opensin-ai</code></pre>
+          </div>
+        </section>
+
+        <aside class="hero-panel">
+          <div class="surface-card spotlight">
+            <p class="kicker">Two surfaces, one ecosystem</p>
+            <h2>Separate the audiences.</h2>
+            <p>
+              <code>docs.opensin.ai</code> stays consumer-first.
+              <code>developers.opensin.ai/docs</code> is for builders.
+              <code>my.opensin.ai</code> handles plans and account flows.
+            </p>
+          </div>
+
+          <div class="surface-grid">
+            <a class="surface-card link-card" href="/docs/">
+              <span>Developer docs</span>
+              <strong>API & SDK reference</strong>
+            </a>
+            <a class="surface-card link-card" href="https://docs.opensin.ai/">
+              <span>Consumer docs</span>
+              <strong>Product help & onboarding</strong>
+            </a>
+            <a class="surface-card link-card" href="https://my.opensin.ai/">
+              <span>MyOpenSIN</span>
+              <strong>Plans, billing & access</strong>
+            </a>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

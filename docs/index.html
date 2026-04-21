@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenSIN Developer Docs</title>
+    <meta
+      name="description"
+      content="OpenSIN developer docs for APIs, SDKs, auth, webhooks, and integrations."
+    />
+    <link rel="canonical" href="https://developers.opensin.ai/docs/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell docs-shell">
+      <header class="topbar docs-topbar">
+        <a class="brand" href="/" aria-label="Back to developer home">
+          <span class="brand-mark"></span>
+          <span>OpenSIN Developers</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/docs/">Docs</a>
+          <a href="https://docs.opensin.ai/">Consumer Docs</a>
+          <a href="https://my.opensin.ai/">MyOpenSIN</a>
+        </nav>
+      </header>
+
+      <div class="docs-layout">
+        <aside class="sidebar">
+          <p class="eyebrow">Contents</p>
+          <a href="#quickstart">Quickstart</a>
+          <a href="#auth">Authentication</a>
+          <a href="#sdk">SDKs</a>
+          <a href="#webhooks">Webhooks</a>
+          <a href="#deployment">Cloudflare deployment</a>
+          <a href="#consumer">Consumer docs</a>
+        </aside>
+
+        <article class="docs-content">
+          <p class="eyebrow">Developer documentation</p>
+          <h1>OpenSIN API & integration docs</h1>
+          <p class="lead">
+            Clean, direct docs for teams shipping against the OpenSIN platform.
+          </p>
+
+          <div class="callout">
+            Consumer docs live at <a href="https://docs.opensin.ai/">docs.opensin.ai</a>.
+            If you are not building an integration, start there.
+          </div>
+
+          <section id="quickstart" class="docs-section">
+            <h2>Quickstart</h2>
+            <p>Start here if you need the fastest path from zero to working API calls.</p>
+            <pre><code>bun install
+bun ./scripts/build.mjs</code></pre>
+          </section>
+
+          <section id="auth" class="docs-section">
+            <h2>Authentication</h2>
+            <p>Use the token flow documented per integration surface. Keep scopes explicit.</p>
+            <div class="callout">Cloudflare Pages hosts this site; the docs stay static and fast.</div>
+          </section>
+
+          <section id="sdk" class="docs-section">
+            <h2>SDKs</h2>
+            <p>Link language-specific SDK guides, code samples, and client conventions here.</p>
+            <ul>
+              <li>TypeScript SDK</li>
+              <li>Go SDK</li>
+              <li>Python SDK</li>
+            </ul>
+          </section>
+
+          <section id="webhooks" class="docs-section">
+            <h2>Webhooks</h2>
+            <p>Document signatures, retries, and edge cases first. Keep examples compact.</p>
+          </section>
+
+          <section id="deployment" class="docs-section">
+            <h2>Cloudflare deployment</h2>
+            <pre><code>wrangler pages deploy dist \
+  --project-name website-developers-opensin-ai</code></pre>
+          </section>
+
+          <section id="consumer" class="docs-section">
+            <h2>Consumer docs</h2>
+            <p>
+              If you are not building an integration, use the simpler consumer surface
+              at <a href="https://docs.opensin.ai/">docs.opensin.ai</a>.
+            </p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
