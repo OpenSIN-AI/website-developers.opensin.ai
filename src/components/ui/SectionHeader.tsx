@@ -7,8 +7,8 @@ interface Props {
 
 export default function SectionHeader({ title, viewAllHref }: Props) {
   return (
-    <div className="mb-8 flex items-end justify-between border-b border-gray-100 pb-4">
-      <h2 className="text-2xl font-bold tracking-tight text-gray-900">{title}</h2>
+    <div className="mb-8 flex items-end justify-between border-b border-[var(--border-subtle)] pb-4">
+      <h2 className="text-2xl font-bold tracking-tight text-[var(--text-primary)]">{title}</h2>
       <Link
         href={viewAllHref}
         className="text-sm font-semibold text-sin-green hover:text-sin-dark transition-colors flex items-center"

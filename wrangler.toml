@@ -1,3 +1,11 @@
-name = "website-developers-opensin-ai"
-compatibility_date = "2025-01-01"
+name = "opensin-developers"
+compatibility_date = "2024-08-01"
 pages_build_output_dir = "dist"
+
+[vars]
+NODE_VERSION = "20"
+
+[[routes]]
+pattern = "developers.opensin.ai/*"
+zone_name = "opensin.ai"
+
