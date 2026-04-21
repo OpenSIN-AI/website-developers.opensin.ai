@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: OpenSIN Neural-Bus API
+  description: Canonical API reference for the OpenSIN-AI ecosystem. Orchestrate fleets, manage agents, and relay A2A messages.
+  version: 1.0.0
+paths:
+  /v1/agents:
+    get:
+      summary: List all active agents
+      description: Returns a list of agents currently connected to the Neural-Bus.
+      responses:
+        '200':
+          description: Successful response
+    post:
+      summary: Dispatch a new agent task
+      description: Send a command to a specific agent or the fleet orchestrator.
+      parameters:
+        - name: model
+          in: body
+          description: The SIN model to use for the task.
+          schema:
+            type: string
+      responses:
+        '202':
+          description: Task accepted
+  /v1/relay:
+    post:
+      summary: Send A2A message
+      description: Relay a structured message between two agents via the Neural-Bus.
+      responses:
+        '200':
+          description: Message delivered
